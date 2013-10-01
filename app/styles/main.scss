@@ -1,0 +1,50 @@
+html, body {
+    font-family: 'Crimson Text', serif;
+    color: black;
+    background-color: white;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+
+    .main-block {
+        height: 574px;
+        background-image: url(../images/first-background.png);
+        position: relative;
+
+        .banner {
+            height: 215px;
+            position: relative;
+            top: 200px;
+            background-color: rgba(255,255,255,0.5);
+            overflow: hidden;
+
+            h1 {
+                margin: 0;
+                width: 540px;
+                position: relative;
+                top: 17px;
+                left: 190px;
+
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 47px;
+            }
+        }
+    }
+}
