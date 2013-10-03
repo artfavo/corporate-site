@@ -1,3 +1,8 @@
+$blue: #21baea;
+$gray: #8b8b8b;
+$sepColor: #dadada;
+$textGray: #949494;
+
 html, body {
     font-family: 'Crimson Text', serif;
     color: black;
@@ -16,35 +21,462 @@ body {
     padding: 0.2em 0;
 }
 
+.back-image-header {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 574px;
+    background-image: url(../images/first-background.png);
+    background-size: cover;
+}
+
+.back-image-review {
+    position: absolute;
+    z-index: 0;
+    top: 946px;
+    left: 0;
+    width: 100%;
+    height: 554px;
+    background-image: url(../images/second-background.png);
+    background-size: cover;
+}
+
+.banner {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 215px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: $blue;
+}
+
+.separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $sepColor;
+}
+
 .main-container {
-    width: 1200px;
+    width: 980px;
     margin: 0 auto;
     height: 100%;
 
     .main-block {
         height: 574px;
-        background-image: url(../images/first-background.png);
         position: relative;
+        z-index: 1;
 
-        .banner {
-            height: 215px;
-            position: relative;
-            top: 200px;
-            background-color: rgba(255,255,255,0.5);
-            overflow: hidden;
+        .logo {
+            position: absolute;
+            top: 116px;
+            left: 160px;
 
-            h1 {
-                margin: 0;
-                width: 540px;
-                position: relative;
-                top: 17px;
-                left: 190px;
+            width: 309px;
+            height: 30px;
+            background-image: url(../images/logo.png);
+        }
 
-                text-align: center;
-                font-weight: bold;
-                font-style: italic;
-                font-size: 47px;
+        h1 {
+            margin: 0;
+            width: 540px;
+            position: absolute;
+            z-index: 1;
+            top: 213px;
+            left: 50px;
+
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 47px;
+            line-height: 58px;
+        }
+
+        .iphone {
+            position: absolute;
+            top: 136px;
+            left: 635px;
+
+            width: 278px;
+            height: 438px;
+            background-image: url(../images/iphone.png);
+        }
+
+        .download {
+            display: block;
+            position: absolute;
+            left: 74px;
+            top: 467px;
+            height: 51px;
+            width: 240px;
+            padding: 10px;
+
+            background-color: $blue;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+
+            color: white;
+            font-family: 'Exo', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+
+            table {
+                width: 100%;
+
+                td {
+                    padding: 0;
+                    vertical-align: top;
+                }
+            }
+
+            .big {
+                text-align: right;
+                font-size: 23px;
+                line-height: 29px;
+            }
+
+            .small {
+                text-align: right;
+                font-size: 13px;
+            }
+
+            .app-icon {
+                width: 70px;
+
+                & > div {
+                    width: 51px;
+                    height: 51px;
+                    background-image: url(../images/app-icon.png);
+                    margin-right: 10px;
+                    margin-left: auto;
+                }
             }
         }
+
+        .appstore {
+            position: absolute;
+            width: 183px;
+            height: 85px;
+            left: 366px;
+            top: 464px;
+
+            table {
+                width: 100%;
+
+                color: black;
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+
+                .text {
+                    vertical-align: top;
+                    padding-top: 3px; 
+                }
+
+                .appstore-icon {
+                    position: relative;
+                    z-index: 1;
+
+                    & > div {
+                        width: 110px;
+                        height: 37px;
+                        background-image: url(../images/appstore.png);
+                    }
+                }
+
+                .devices-icon {
+                    & > div {
+                        width: 101px;
+                        height: 85px;
+                        background-image: url(../images/devices.png);
+                        margin-left: -26px;
+                        margin-top: -15px;
+                    }
+                }
+            }
+        }
+
+        .header {
+            position: absolute;
+            width: 100%;
+            height: 53px;
+
+            .tongue {
+                position: absolute;
+                top: 0;
+                left: 736px;
+
+                width: 189px;
+                height: 52px;
+                background-image: url(../images/tongue.png);
+            }
+
+            .social {
+                position: absolute;
+                top: 19px;
+                left: 779px;
+
+                width: 109px;
+                height: 19px;
+                background-image: url(../images/social.png);
+            }
+        }
+
+        .languages {
+            position: absolute;
+            top: 17px;
+            left: 608px;
+
+            font-style: italic;
+            font-size: 15px;
+
+            td {
+                padding-left: 15px;
+
+                a, a:visited {
+                    text-decoration: none;
+                    color: $gray;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .focus-block {
+        height: 322px;
+        position: relative;
+        z-index: 1;
+        margin-top: 50px;
+
+        > table {
+            width: 870px;
+            margin: 0 auto;
+
+            .focus-image {
+                width: 410px;
+
+                > div {
+                    margin: auto;
+                    width: 324px;
+                    height: 221px;
+                    background-image: url(../images/focus.png);
+                }
+            }
+        }
+
+        .duchamp {
+            .image-duchamp {
+                width: 86px;
+
+                > div {
+                    width: 69px;
+                    height: 69px;
+                    background-image: url(../images/duchamp.png);
+                }
+            }
+
+            .title {
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 25px;
+                padding-top: 5px;
+            }
+
+            .subtitle {
+                color: $textGray;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 40px;
+                line-height: 35px;
+                padding-bottom: 5px;
+            }
+
+            .preview {
+                font-weight: 600;
+                font-style: italic;
+                font-size: 21px;
+                line-height: 26px;
+                padding-top: 5px;
+            }
+
+            .description {
+                font-size: 17px;
+                line-height: 22px;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .review-block {
+        height: 500px;
+        position: relative;
+        z-index: 1;
+
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 54px auto 44px auto;
+            font-family: 'Exo', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+
+            small {
+                color: $textGray;
+                font-family: 'Crimson Text', serif;
+                font-weight: 500;
+                font-style: italic;
+                font-size: 21px;
+            }
+        }
+
+        .reviews {
+            margin: 0 auto;
+            border-collapse: collapse;
+
+            td {
+                padding: 0;
+            }
+
+            .tile {
+                display: block;
+                position: relative;
+                width: 236px;
+                padding: 20px 23px 30px 23px;
+                color: white;
+
+                .text {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 500;
+                    font-style: italic;
+
+                    span {
+                        font-size: 40px;
+                        line-height: 20px;
+                        vertical-align: -10px;
+                    }
+                }
+
+                .author {
+                    margin-top: 20px;
+                    font-size: 16px;
+                    font-weight: lighter;
+                }
+
+                &.blue {
+                    background-color: $blue;
+                }
+
+                &.gray {
+                    background-color: $gray;
+                }
+
+                &.black {
+                    background-color: black;
+                }
+
+                .perso {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    bottom: -36px;
+                    right: 16px;
+
+                    &.one {
+                        background-image: url(../images/perso1.png);
+                    }
+
+                    &.two {
+                        background-image: url(../images/perso2.png);
+                    }
+
+                    &.three {
+                        background-image: url(../images/perso3.png);
+                    }
+                }
+            }
+        }
+
+        .download {
+            display: block;
+            position: absolute;
+            left: 240px;
+            bottom: -35px;
+            height: 51px;
+            width: 310px;
+            padding: 10px;
+
+            background-color: $blue;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+
+            color: white;
+            font-family: 'Exo', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+
+            table {
+                width: 100%;
+
+                td {
+                    padding: 0;
+                    vertical-align: top;
+                }
+            }
+
+            .big {
+                text-align: left;
+                font-size: 17px;
+                line-height: 50px;
+            }
+
+            .app-icon {
+                width: 65px;
+
+                & > div {
+                    width: 51px;
+                    height: 51px;
+                    background-image: url(../images/app-icon.png);
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .appstore-icon {
+            position: absolute;
+            left: 593px;
+            bottom: -18px;
+
+            width: 110px;
+            height: 37px;
+            background-image: url(../images/appstore.png);
+        }
+    }
+
+    .social-block {
+        height: 400px;
+        position: relative;
+        z-index: 1;
     }
 }
