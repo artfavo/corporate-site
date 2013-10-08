@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>ArtFavo - L’application mobile pour collectionneurs et passionn&eacute;s d’art contemporain</title>
         <meta name="description" content="L’application mobile pour collectionneurs et passionn&eacute;s d’art contemporain. Retrouvez toutes les informations sur le Prix 2013 et l’ensemble des artistes nomin&eacute;s et laur&eacute;at depuis 2000.">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <meta name="apple-itunes-app" content="app-id=713804921">
         <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
         <!-- build:css(.tmp) styles/main.css -->
@@ -16,10 +16,6 @@
         <!-- endbuild -->
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
 
         <div class="main-container">
             <div class="wrapper">
@@ -60,8 +56,8 @@
                         </table>
                         <table class="languages">
                             <tr>
-                                <td><a href="#" onclick="return false;">English</a></td>
-                                <td><a href="#" onclick="return false;">Français</a></td>
+                                <td><a href="http://artfavo.com">English</a></td>
+                                <td><a href="http://artfavo.com/fr">Fran&ccedil;ais</a></td>
                             </tr>
                         </table>
                     </div>
@@ -229,14 +225,13 @@
         <div class="sep sep3"></div>
         <div class="sep sep4"></div>
 
-
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- <script src="bower_components/jquery/jquery.js"></script> -->
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -257,7 +252,7 @@
         }(document, 'script', 'facebook-jssdk'));</script>
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <!-- <script src="scripts/main.js"></script> -->
         <!-- endbuild -->
 </body>
 </html>
