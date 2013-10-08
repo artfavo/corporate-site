@@ -86,9 +86,10 @@ ErrorDocument 404 /404.html
 
 # Force IE to render pages in the highest available mode in the various
 # cases when it may not: http://hsivonen.iki.fi/doctype/ie-mode.pdf.
+# Use, if installed, Google Chrome Frame.
 
 <IfModule mod_headers.c>
-    Header set X-UA-Compatible "IE=edge"
+    Header set X-UA-Compatible "IE=edge,chrome=1"
     # `mod_headers` can't match based on the content-type, however, we only
     # want to send this header for HTML pages and not for the other resources
     <FilesMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svg|svgz|ttf|vcf|webapp|webm|webp|woff|xml|xpi)$">
@@ -213,6 +214,23 @@ AddDefaultCharset utf-8
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
   # RewriteBase /
+
+  # Old version of API
+    RewriteRule ^Logic/API/request(.*) Logic/API/request.php?$1
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# |   Redirect artfavo.fr and artfavo.eu to artfavo.com/fr                     |
+# ------------------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_HOST} ^artfavo\.fr(.*)$ [NC]
+    RewriteRule ^ http://artfavo.com/fr%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_HOST} ^artfavo\.eu(.*)$ [NC]
+    RewriteRule ^ http://artfavo.com%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # ------------------------------------------------------------------------------
