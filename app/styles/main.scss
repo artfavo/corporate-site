@@ -29,6 +29,7 @@ body {
     width: 100%;
     height: 574px;
     background-image: url(../images/first-background.png);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -41,6 +42,7 @@ body {
     // height: 554px;
     height: 504px;
     background-image: url(../images/second-background.png);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -121,6 +123,7 @@ body {
             width: 309px;
             height: 30px;
             background-image: url(../images/logo.png);
+            background-repeat: no-repeat;
         }
 
         h1 {
@@ -146,6 +149,7 @@ body {
             width: 278px;
             height: 438px;
             background-image: url(../images/iphone.png);
+            background-repeat: no-repeat;
         }
 
         .download {
@@ -194,6 +198,7 @@ body {
                     width: 51px;
                     height: 51px;
                     background-image: url(../images/app-icon.png);
+                    background-repeat: no-repeat;
                     margin-right: 10px;
                     margin-left: auto;
                 }
@@ -228,6 +233,7 @@ body {
                         width: 110px;
                         height: 37px;
                         background-image: url(../images/appstore-en.png);
+                        background-repeat: no-repeat;
                     }
                 }
 
@@ -236,6 +242,7 @@ body {
                         width: 101px;
                         height: 85px;
                         background-image: url(../images/devices.png);
+                        background-repeat: no-repeat;
                         margin-left: -26px;
                         margin-top: -15px;
                     }
@@ -256,6 +263,7 @@ body {
                 width: 189px;
                 height: 52px;
                 background-image: url(../images/tongue.png);
+                background-repeat: no-repeat;
             }
 
             .social {
@@ -271,18 +279,21 @@ body {
                     width: 10px;
                     height: 19px;
                     background-image: url(../images/icon-facebook.png);
+                    background-repeat: no-repeat;
                 }
 
                 .icon-twitter {
                     width: 23px;
                     height: 17px;
                     background-image: url(../images/icon-twitter.png);
+                    background-repeat: no-repeat;
                 }
 
                 .icon-mail {
                     width: 19px;
                     height: 13px;
                     background-image: url(../images/icon-mail.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -329,6 +340,7 @@ body {
                     width: 324px;
                     height: 221px;
                     background-image: url(../images/focus.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -341,6 +353,7 @@ body {
                     width: 69px;
                     height: 69px;
                     background-image: url(../images/duchamp.png);
+                    background-repeat: no-repeat;
                 }
             }
 
@@ -431,24 +444,28 @@ body {
                     width: 278px;
                     height: 187px;
                     background-image: url(../images/slide-1.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.two {
                     width: 206px;
                     height: 187px;
                     background-image: url(../images/slide-2.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.three {
                     width: 327px;
                     height: 172px;
                     background-image: url(../images/slide-3.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.four {
                     width: 276px;
                     height: 215px;
                     background-image: url(../images/slide-4.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -531,14 +548,17 @@ body {
 
                     &.one {
                         background-image: url(../images/perso1.png);
+                        background-repeat: no-repeat;
                     }
 
                     &.two {
                         background-image: url(../images/perso2.png);
+                        background-repeat: no-repeat;
                     }
 
                     &.three {
                         background-image: url(../images/perso3.png);
+                        background-repeat: no-repeat;
                     }
                 }
             }
@@ -585,6 +605,7 @@ body {
                     width: 51px;
                     height: 51px;
                     background-image: url(../images/app-icon.png);
+                    background-repeat: no-repeat;
                     margin-right: auto;
                     margin-left: auto;
                 }
@@ -599,6 +620,7 @@ body {
             width: 110px;
             height: 37px;
             background-image: url(../images/appstore.png);
+            background-repeat: no-repeat;
         }
     }
 
@@ -644,6 +666,7 @@ body {
                     width: 57px;
                     height: 57px;
                     background-image: url(../images/facebook.png);
+                    background-repeat: no-repeat;
                 }
 
                 .fb-like {
@@ -664,6 +687,7 @@ body {
                     width: 57px;
                     height: 57px;
                     background-image: url(../images/twitter.png);
+                    background-repeat: no-repeat;
                 }
 
                 .twitter-follow-button {
@@ -722,6 +746,7 @@ body {
                     width: 149px;
                     height: 14px;
                     background-image: url(../images/logo-footer.png);
+                    background-repeat: no-repeat;
                     margin: auto;
                 }
             }
@@ -739,6 +764,7 @@ body {
                 width: 17px;
                 height: 9px;
                 background-image: url(../images/logo-designer.png);
+                background-repeat: no-repeat;
             }
         }
     }
