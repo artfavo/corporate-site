@@ -220,20 +220,6 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # ------------------------------------------------------------------------------
-# |   Redirect artfavo.fr and artfavo.eu to artfavo.com/fr                     |
-# ------------------------------------------------------------------------------
-
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTP_HOST} ^artfavo\.fr(.*)$ [NC]
-    RewriteRule ^ http://artfavo.com/fr%1%{REQUEST_URI} [R=301,L]
-</IfModule>
-
-<IfModule mod_rewrite.c>
-    RewriteCond %{HTTP_HOST} ^artfavo\.eu(.*)$ [NC]
-    RewriteRule ^ http://artfavo.com%1%{REQUEST_URI} [R=301,L]
-</IfModule>
-
-# ------------------------------------------------------------------------------
 # | Suppressing / Forcing the "www." at the beginning of URLs                  |
 # ------------------------------------------------------------------------------
 
