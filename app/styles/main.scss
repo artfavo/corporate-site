@@ -32,7 +32,7 @@ body {
     background-size: cover;
 
     &.news { height: 320px; }
-    &.about { height: 490px; top: 1740px; }
+    &.about { height: 240px; top: 1960px; }
 }
 
 .back-image-review {
@@ -42,7 +42,7 @@ body {
     left: 0;
     width: 100%;
     // height: 554px;
-    height: 504px;
+    height: 450px;
     background-image: url(../images/second-background.png);
     background-size: cover;
 }
@@ -60,14 +60,13 @@ body {
 
 .banner-footer {
     position: absolute;
-    // top: 3280px;
-    top: 2760px;
+    top: 2756px;
     left: 0;
     width: 100%;
     height: 94px;
     background-color: #eeeeee;
 
-    &.news { top: 2230px; }
+    &.news { top: 2200px; }
 }
 
 .banner-slider-1 {
@@ -649,9 +648,10 @@ body {
         height: 340px;
         position: relative;
         z-index: 1;
+        padding-top: 80px;
+        padding-bottom: 30px;
 
         table {
-            margin: 80px auto 0 auto;
             padding-left: 20px;
             padding-right: 10px;
 
@@ -747,14 +747,13 @@ body {
     }
 
     .footer-block {
-        top: 30px;
         height: 58px;
         position: relative;
         z-index: 1;
+        padding-top: 30px;
 
         table {
             margin: 0 auto;
-            margin-top: 36px;
 
             color: black;
             font-size: 13px;
@@ -796,6 +795,11 @@ body {
 
         &.small {
             height: 260px;
+        }
+
+        &.tiny {
+            padding-top: 0;
+            height: 180px;
         }
 
         table {
@@ -848,9 +852,9 @@ body {
                 margin: auto;
 
                 &.one {
-                    width: 240px;
-                    height: 240px;
-                    background-image: url(../images/PrixDuchamp2011.jpg);
+                    width: 280px;
+                    height: 189px;
+                    background-image: url(../images/duchamp-live.png);
                 }
 
                 &.two {
@@ -879,13 +883,13 @@ body {
         position: relative;
         z-index: 1;
         width: 900px;
-        padding: 30px 30px 0 30px;
+        padding: 20px 30px;
 
         .title {
-            font-family: 'Exo', sans-serif;
             font-weight: bold;
-            font-size: 26px;
-            line-height: 40px;
+            font-style: italic;
+            font-size: 34px;
+            line-height: 50px;
             padding-top: 5px;
         }
 
