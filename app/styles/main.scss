@@ -30,6 +30,9 @@ body {
     height: 574px;
     background-image: url(../images/first-background.png);
     background-size: cover;
+
+    &.news { height: 100px; }
+    &.about { height: 260px; top: 1640px; }
 }
 
 .back-image-review {
@@ -56,11 +59,13 @@ body {
 .banner-footer {
     position: absolute;
     // top: 3280px;
-    top: 2730px;
+    top: 2760px;
     left: 0;
     width: 100%;
     height: 94px;
     background-color: #eeeeee;
+
+    &.news { top: 1900px; }
 }
 
 .banner-slider-1 {
@@ -79,6 +84,16 @@ body {
     width: 100%;
     height: 340px;
     background-color: #fafafa;
+}
+
+.banner-news {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #fafafa;
+
+    &.one { top: 700px; }
 }
 
 .line {
@@ -101,10 +116,13 @@ body {
     &.sep2 { top: 1286px; }
     &.sep3 { top: 1626px; }
     &.sep4 { top: 1966px; }
+    &.sep5 { top: 700px; }
+    &.sep6 { top: 1300px; }
+    &.sep7 { top: 1640px; }
 }
 
 .main-container {
-    width: 980px;
+    width: 960px;
     margin: 0 auto;
     height: 100%;
 
@@ -112,6 +130,19 @@ body {
         height: 574px;
         position: relative;
         z-index: 1;
+
+        &.reduced {
+            height: 100px;
+        }
+
+        .website-link {
+            display: block;
+            position: relative;
+            top: 38px;
+            left: 20px;
+            width: 309px;
+            height: 30px;
+        }
 
         .logo {
             position: absolute;
@@ -121,6 +152,10 @@ body {
             width: 309px;
             height: 30px;
             background-image: url(../images/logo.png);
+
+            &.news {
+                position: static;
+            }
         }
 
         h1 {
@@ -136,6 +171,12 @@ body {
             font-style: italic;
             font-size: 47px;
             line-height: 58px;
+
+            &.news {
+                width: auto;
+                top: 23px;
+                left: 370px;
+            }
         }
 
         .iphone {
@@ -704,6 +745,7 @@ body {
     }
 
     .footer-block {
+        top: 30px;
         height: 58px;
         position: relative;
         z-index: 1;
@@ -740,6 +782,117 @@ body {
                 height: 9px;
                 background-image: url(../images/logo-designer.png);
             }
+        }
+    }
+
+    .news-block {
+        height: 520px;
+        position: relative;
+        z-index: 1;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &.small {
+            height: 260px;
+        }
+
+        table {
+            width: 100%;
+
+            .text {
+                width: 600px;
+
+                &.right {
+                    padding-left: 20px;
+                    padding-right: 40px;
+                    text-align: left;
+                }
+
+                &.left {
+                    padding-left: 40px;
+                    padding-right: 20px;
+                    text-align: left;
+                }
+
+                &.double {
+                    text-align: justify;
+                    padding: 0 20px;
+                }
+            }
+
+            .title {
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 40px;
+                padding-top: 5px;
+            }
+
+            .subtitle {
+                padding-top: 10px;
+                color: $textGray;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 26px;
+                line-height: 32px;
+                padding-bottom: 40px;
+            }
+
+            .description {
+                font-size: 21px;
+                line-height: 26px;
+                padding-top: 10px;
+            }
+
+            .picto {
+                margin: auto;
+
+                &.one {
+                    width: 240px;
+                    height: 240px;
+                    background-image: url(../images/PrixDuchamp2011.jpg);
+                }
+
+                &.two {
+                    width: 234px;
+                    height: 175px;
+                    background-image: url(../images/adiaf.jpg);
+                }
+
+                &.three {
+                    width: 240px;
+                    height: 504px;
+                    background-image: url(../images/iphone-white.png);
+                }
+
+                &.four {
+                    width: 276px;
+                    height: 215px;
+                    background-image: url(../images/slide-4.png);
+                }
+            }
+        }
+    }
+
+    .about-adiaf {
+        height: 200px;
+        position: relative;
+        z-index: 1;
+        width: 900px;
+        margin: 30px 30px;
+
+        .title {
+            font-family: 'Exo', sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 40px;
+            padding-top: 5px;
+        }
+
+        .content {
+            font-size: 21px;
+            line-height: 26px;
+            padding-top: 10px;
         }
     }
 }
