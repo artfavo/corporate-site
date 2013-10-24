@@ -30,6 +30,9 @@ body {
     height: 574px;
     background-image: url(../images/first-background.png);
     background-size: cover;
+
+    &.news { height: 280px; }
+    &.about { height: 240px; top: 1880px; }
 }
 
 .back-image-review {
@@ -39,7 +42,7 @@ body {
     left: 0;
     width: 100%;
     // height: 554px;
-    height: 504px;
+    height: 450px;
     background-image: url(../images/second-background.png);
     background-size: cover;
 }
@@ -51,16 +54,19 @@ body {
     width: 100%;
     height: 215px;
     background-color: rgba(255,255,255,0.5);
+
+    &.news { height: 90px; top: 160px; }
 }
 
 .banner-footer {
     position: absolute;
-    // top: 3280px;
-    top: 2730px;
+    top: 2756px;
     left: 0;
     width: 100%;
     height: 94px;
     background-color: #eeeeee;
+
+    &.news { top: 2120px; }
 }
 
 .banner-slider-1 {
@@ -79,6 +85,16 @@ body {
     width: 100%;
     height: 340px;
     background-color: #fafafa;
+}
+
+.banner-news {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #fafafa;
+
+    &.one { top: 700px; }
 }
 
 .line {
@@ -101,10 +117,11 @@ body {
     &.sep2 { top: 1286px; }
     &.sep3 { top: 1626px; }
     &.sep4 { top: 1966px; }
+    &.sep5 { top: 2000px; }
 }
 
 .main-container {
-    width: 980px;
+    width: 960px;
     margin: 0 auto;
     height: 100%;
 
@@ -112,6 +129,19 @@ body {
         height: 574px;
         position: relative;
         z-index: 1;
+
+        &.reduced {
+            height: 280px;
+        }
+
+        .website-link {
+            display: block;
+            position: relative;
+            top: 28px;
+            width: 309px;
+            height: 30px;
+            margin: 0 auto;
+        }
 
         .logo {
             position: absolute;
@@ -121,6 +151,11 @@ body {
             width: 309px;
             height: 30px;
             background-image: url(../images/logo.png);
+            background-repeat: no-repeat;
+
+            &.news {
+                position: static;
+            }
         }
 
         h1 {
@@ -136,6 +171,14 @@ body {
             font-style: italic;
             font-size: 47px;
             line-height: 58px;
+
+            &.news {
+                display: block;
+                position: relative;
+                width: auto;
+                top: 173px;
+                left: auto;
+            }
         }
 
         .iphone {
@@ -146,6 +189,7 @@ body {
             width: 278px;
             height: 438px;
             background-image: url(../images/iphone.png);
+            background-repeat: no-repeat;
         }
 
         .download {
@@ -194,6 +238,7 @@ body {
                     width: 51px;
                     height: 51px;
                     background-image: url(../images/app-icon.png);
+                    background-repeat: no-repeat;
                     margin-right: 10px;
                     margin-left: auto;
                 }
@@ -228,6 +273,7 @@ body {
                         width: 110px;
                         height: 37px;
                         background-image: url(../images/appstore.png);
+                        background-repeat: no-repeat;
                     }
                 }
 
@@ -236,6 +282,7 @@ body {
                         width: 101px;
                         height: 85px;
                         background-image: url(../images/devices.png);
+                        background-repeat: no-repeat;
                         margin-left: -26px;
                         margin-top: -15px;
                     }
@@ -256,6 +303,7 @@ body {
                 width: 189px;
                 height: 52px;
                 background-image: url(../images/tongue.png);
+                background-repeat: no-repeat;
             }
 
             .social {
@@ -271,18 +319,21 @@ body {
                     width: 10px;
                     height: 19px;
                     background-image: url(../images/icon-facebook.png);
+                    background-repeat: no-repeat;
                 }
 
                 .icon-twitter {
                     width: 23px;
                     height: 17px;
                     background-image: url(../images/icon-twitter.png);
+                    background-repeat: no-repeat;
                 }
 
                 .icon-mail {
                     width: 19px;
                     height: 13px;
                     background-image: url(../images/icon-mail.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -329,6 +380,7 @@ body {
                     width: 324px;
                     height: 221px;
                     background-image: url(../images/focus.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -341,6 +393,7 @@ body {
                     width: 69px;
                     height: 69px;
                     background-image: url(../images/duchamp.png);
+                    background-repeat: no-repeat;
                 }
             }
 
@@ -431,24 +484,28 @@ body {
                     width: 278px;
                     height: 187px;
                     background-image: url(../images/slide-1.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.two {
                     width: 206px;
                     height: 187px;
                     background-image: url(../images/slide-2.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.three {
                     width: 327px;
                     height: 172px;
                     background-image: url(../images/slide-3.png);
+                    background-repeat: no-repeat;
                 }
 
                 &.four {
                     width: 276px;
                     height: 215px;
                     background-image: url(../images/slide-4.png);
+                    background-repeat: no-repeat;
                 }
             }
         }
@@ -531,14 +588,17 @@ body {
 
                     &.one {
                         background-image: url(../images/perso1.png);
+                        background-repeat: no-repeat;
                     }
 
                     &.two {
                         background-image: url(../images/perso2.png);
+                        background-repeat: no-repeat;
                     }
 
                     &.three {
                         background-image: url(../images/perso3.png);
+                        background-repeat: no-repeat;
                     }
                 }
             }
@@ -585,6 +645,7 @@ body {
                     width: 51px;
                     height: 51px;
                     background-image: url(../images/app-icon.png);
+                    background-repeat: no-repeat;
                     margin-right: auto;
                     margin-left: auto;
                 }
@@ -599,6 +660,7 @@ body {
             width: 110px;
             height: 37px;
             background-image: url(../images/appstore.png);
+            background-repeat: no-repeat;
         }
     }
 
@@ -606,9 +668,17 @@ body {
         height: 340px;
         position: relative;
         z-index: 1;
+        padding-top: 40px;
+        padding-bottom: 70px;
+
+        .link {
+            display: inline-block;
+            margin-left: 22px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
 
         table {
-            margin: 80px auto 0 auto;
             padding-left: 20px;
             padding-right: 10px;
 
@@ -644,6 +714,7 @@ body {
                     width: 57px;
                     height: 57px;
                     background-image: url(../images/facebook.png);
+                    background-repeat: no-repeat;
                 }
 
                 .fb-like {
@@ -664,6 +735,7 @@ body {
                     width: 57px;
                     height: 57px;
                     background-image: url(../images/twitter.png);
+                    background-repeat: no-repeat;
                 }
 
                 .twitter-follow-button {
@@ -707,10 +779,10 @@ body {
         height: 58px;
         position: relative;
         z-index: 1;
+        padding-top: 30px;
 
         table {
             margin: 0 auto;
-            margin-top: 36px;
 
             color: black;
             font-size: 13px;
@@ -722,6 +794,7 @@ body {
                     width: 149px;
                     height: 14px;
                     background-image: url(../images/logo-footer.png);
+                    background-repeat: no-repeat;
                     margin: auto;
                 }
             }
@@ -739,7 +812,146 @@ body {
                 width: 17px;
                 height: 9px;
                 background-image: url(../images/logo-designer.png);
+                background-repeat: no-repeat;
             }
+        }
+    }
+
+    .news-block {
+        height: 460px;
+        position: relative;
+        z-index: 1;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &.small {
+            height: 260px;
+        }
+
+        &.long-text {
+            height: 440px;
+        }
+
+        table {
+            width: 100%;
+
+            .text {
+                width: 600px;
+
+                &.right {
+                    padding-left: 20px;
+                    padding-right: 40px;
+                    text-align: left;
+                }
+
+                &.left {
+                    padding-left: 40px;
+                    padding-right: 20px;
+                    text-align: left;
+                }
+
+                &.top {
+                    vertical-align: top;
+                }
+
+                &.single {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+            }
+
+            .title {
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 40px;
+                padding-top: 5px;
+            }
+
+            .subtitle {
+                color: $textGray;
+                font-weight: 600;
+                font-style: italic;
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            .description {
+                font-size: 21px;
+                line-height: 26px;
+                padding-top: 10px;
+
+                .stronger {
+                    font-size: 26px;
+                }
+            }
+
+            .legend {
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .picto {
+                margin: auto;
+
+                &.one {
+                    width: 280px;
+                    height: 189px;
+                    background-image: url(../images/duchamp-live.png);
+                    background-repeat: no-repeat;
+                }
+
+                &.two {
+                    width: 234px;
+                    height: 175px;
+                    background-image: url(../images/adiaf.jpg);
+                    background-repeat: no-repeat;
+                }
+
+                &.three {
+                    width: 240px;
+                    height: 504px;
+                    background-image: url(../images/iphone-white.png);
+                    background-repeat: no-repeat;
+                }
+
+                &.four {
+                    width: 276px;
+                    height: 215px;
+                    background-image: url(../images/slide-4.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .about-company {
+        height: 200px;
+        position: relative;
+        z-index: 1;
+        width: 900px;
+        padding: 20px 40px;
+
+        .title {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 34px;
+            line-height: 50px;
+            padding-top: 5px;
+        }
+
+        .content {
+            font-size: 21px;
+            line-height: 26px;
+            padding-top: 10px;
+        }
+    }
+
+    a.link {
+        color: black;
+
+        &:focus, &:visited, &:active {
+            color: black;
         }
     }
 }
