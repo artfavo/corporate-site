@@ -844,9 +844,9 @@ body {
                     text-align: left;
                 }
 
-                &.double {
-                    text-align: justify;
-                    padding: 0 20px;
+                &.single {
+                    padding-left: 40px;
+                    padding-right: 40px;
                 }
             }
 
@@ -916,7 +916,7 @@ body {
         position: relative;
         z-index: 1;
         width: 900px;
-        padding: 20px 30px;
+        padding: 20px 40px;
 
         .title {
             font-weight: bold;
