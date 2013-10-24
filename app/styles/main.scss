@@ -668,8 +668,15 @@ body {
         height: 340px;
         position: relative;
         z-index: 1;
-        padding-top: 80px;
-        padding-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 70px;
+
+        .link {
+            display: inline-block;
+            margin-left: 22px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
 
         table {
             padding-left: 20px;
