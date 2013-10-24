@@ -821,9 +821,8 @@ body {
             height: 260px;
         }
 
-        &.tiny {
-            padding-top: 0;
-            height: 180px;
+        &.long-text {
+            height: 480px;
         }
 
         table {
@@ -842,6 +841,10 @@ body {
                     padding-left: 40px;
                     padding-right: 20px;
                     text-align: left;
+                }
+
+                &.top {
+                    vertical-align: top;
                 }
 
                 &.single {
