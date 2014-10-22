@@ -33,6 +33,7 @@ body {
 
     &.news { height: 280px; }
     &.about { height: 240px; top: 1880px; }
+    &.brochure { height: 450px; top: 550px; }
 }
 
 .back-image-review {
@@ -67,6 +68,7 @@ body {
     background-color: #eeeeee;
 
     &.news { top: 2120px; }
+    &.brochure { top: 996px; }
 }
 
 .banner-slider-1 {
@@ -124,6 +126,11 @@ body {
     width: 960px;
     margin: 0 auto;
     height: 100%;
+
+    .wrapper.brochure {
+        height: 100%;
+        position: relative;
+    }
 
     .main-block {
         height: 574px;
@@ -671,6 +678,10 @@ body {
         padding-top: 40px;
         padding-bottom: 70px;
 
+        &.brochure {
+            bottom: -45px;
+        }
+
         .link {
             display: inline-block;
             margin-left: 22px;
@@ -781,6 +792,11 @@ body {
         z-index: 1;
         padding-top: 30px;
 
+        &.brochure {
+            bottom: -45px;
+        }
+
+
         table {
             margin: 0 auto;
 
@@ -824,6 +840,12 @@ body {
         padding-top: 40px;
         padding-bottom: 40px;
 
+        &.brochure {
+            height: auto;
+            padding-top: 45px;
+            padding-bottom: 20px;
+        }
+
         &.small {
             height: 260px;
         }
@@ -857,6 +879,16 @@ body {
                 &.single {
                     padding-left: 40px;
                     padding-right: 40px;
+                }
+
+                &.brochure {
+                    width: 730px;
+                    margin: auto;
+                    .fa-spinner {
+                        font-size: 60px;
+                        margin-left: 320px;
+                        margin-bottom: 30px;
+                    }
                 }
             }
 
