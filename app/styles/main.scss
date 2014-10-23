@@ -199,6 +199,36 @@ body {
             background-repeat: no-repeat;
         }
 
+        .link-appstore {
+            display: block;
+            position: absolute;
+            left: 71px;
+            top: 440px;
+        }
+
+        .link-googleplay {
+            display: block;
+            position: absolute;
+            left: 74px;
+            top: 500px;
+        }
+
+        .new-app {
+            display: block;
+            position: absolute;
+            left: 204px;
+            top: 452px;
+
+            width: 460px;
+
+            color: black;
+            font-family: 'Exo', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
         .download {
             display: block;
             position: absolute;
@@ -269,7 +299,7 @@ body {
 
                 .text {
                     vertical-align: top;
-                    padding-top: 3px; 
+                    padding-top: 3px;
                 }
 
                 .appstore-icon {
@@ -348,7 +378,8 @@ body {
         .languages {
             position: absolute;
             top: 17px;
-            left: 608px;
+            right: 220px;
+            color: $gray;
 
             font-style: italic;
             font-size: 15px;
