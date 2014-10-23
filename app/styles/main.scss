@@ -32,7 +32,7 @@ body {
     background-size: cover;
 
     &.news { height: 280px; }
-    &.about { height: 240px; top: 1880px; }
+    &.about { height: 240px; top: 1960px; }
     &.brochure { height: 450px; top: 550px; }
 }
 
@@ -67,7 +67,7 @@ body {
     height: 94px;
     background-color: #eeeeee;
 
-    &.news { top: 2120px; }
+    &.news { top: 2200px; }
     &.brochure { top: 996px; }
 }
 
@@ -835,6 +835,7 @@ body {
 
     .news-block {
         height: 460px;
+        &.first { height: 540px; }
         position: relative;
         z-index: 1;
         padding-top: 40px;
